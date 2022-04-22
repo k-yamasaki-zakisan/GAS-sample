@@ -1,6 +1,7 @@
 const APIKEY = ""; //Google Custom Search APIのAPIキー
 const CSEID = ""; //カスタム検索エンジン（CSE）のID
 
+// 参考資料
 // https://qiita.com/zak_y/items/42ca0f1ea14f7046108c
 function googleSearchMain() {
   // 書き込み用シート取得

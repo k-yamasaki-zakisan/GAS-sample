@@ -1,3 +1,4 @@
+// 参考資料
 // https://zenn.dev/d0ne1s/articles/ecd743f82cb59e
 function gaMain() {
   const googleAnalyticsWriteSheet =
