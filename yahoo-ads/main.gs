@@ -41,7 +41,8 @@ function yahooAdsYssMain(url, accessToken, accountId) {
     );
 
   const jobId = getYssReportJobId(url, accessToken, accountId);
-  Utilities.sleep(10000);
+  // スリープしないとデータの取得に失敗することがある
+  Utilities.sleep(60000);
   const yssData = downloadYssReport(url, accessToken, accountId, jobId);
 
   writeYahooAdsYssWriteSheet(yahooAdsYssWriteSheet, yssData);
@@ -170,7 +171,8 @@ function yahooAdsYdnMain(url, accessToken, accountId) {
     );
 
   const reportJobId = getYdnReportJobId(url, accessToken, accountId);
-  Utilities.sleep(10000);
+  // スリープしないとデータの取得に失敗することがある
+  Utilities.sleep(60000);
   const ydnData = downloadYdnReport(url, accessToken, accountId, reportJobId);
 
   writeYahooAdsYdnWriteSheet(yahooAdsYdnWriteSheet, ydnData);
