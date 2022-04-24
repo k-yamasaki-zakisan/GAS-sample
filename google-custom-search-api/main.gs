@@ -22,7 +22,8 @@ function googleSearchMain() {
     .getRange(2, 9, sheet.getLastRow() - 1)
     .getValues();
 
-  for (let v = 0; v < words.length; v++) {
+  // 検索apiの無料枠99を上限とする
+  for (let v = 0; v < Math.min(words.length, 99); v++) {
     try {
       const word = words[v][0];
 

@@ -154,6 +154,8 @@ function writeYahooAdsYssWriteSheet(sheet, yssData) {
 
   // headerに日付を記入
   const date = new Date();
+  //昨日の日付を取得
+  date.setDate(date.getDate() - 1);
   const dateFormat = Utilities.formatDate(date, "JST", "YYYY/MM/dd");
   sheet.getRange(1, column).setValues([[dateFormat]]);
 
@@ -281,6 +283,8 @@ function writeYahooAdsYdnWriteSheet(sheet, ydnData) {
 
   // headerに日付を記入
   const date = new Date();
+  //昨日の日付を取得
+  date.setDate(date.getDate() - 1);
   const dateFormat = Utilities.formatDate(date, "JST", "YYYY/MM/dd");
   sheet.getRange(1, column).setValues([[dateFormat]]);
 
