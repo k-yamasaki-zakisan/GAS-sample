@@ -10,6 +10,7 @@ const YDN_ACCOUNT_ID = "";
 
 // 参考資料
 // https://next-k.site/blog/archives/2021/09/30/546
+// https://marketingengineercareer.com/yahooadsapi
 function yahooAdsMain() {
   const accessToken = getAccessToken();
   yahooAdsYssMain(YSS_URL_API, accessToken, YSS_ACCOUNT_ID);
